@@ -1,12 +1,16 @@
-# Portfolio Risk Gateway — Public Beta
+# Portfolio Privacy Gateway — Public Beta
+
+*Open-source. Get AI help with your portfolio without handing over your financial
+identity.*
 
 *By Bobby Malik, author of [Get Rich the Boring Way](https://www.wealthfinancialsystems.com/book) — a no-hype guide to building wealth.*
 
-A local tool that lets an AI assistant analyze your **options portfolio risk**
-without ever seeing your name, account number, or dollar balances. It connects to
-your brokerage, de-identifies everything on your own machine, and exposes only
-normalized ratios to the assistant — plus a risk engine that scores concentration,
-leverage, sector clustering, and scenario losses.
+An open-source **MCP server for Claude Desktop** (and other MCP clients) that lets
+an AI assistant analyze your **options portfolio risk** without ever seeing your
+name, account number, or dollar balances. It connects to your brokerage,
+de-identifies everything on your own machine, and exposes only normalized ratios to
+the assistant — plus a risk engine that scores concentration, leverage, sector
+clustering, and scenario losses.
 
 > **Beta · not investment advice · no warranty.** Please read
 > [DISCLAIMER.md](DISCLAIMER.md) before using.
@@ -78,7 +82,8 @@ risk; any financial decision is your own.
 
 ## Supported
 
-- **Assistant:** Claude Desktop (local MCP).
+- **Assistant:** Claude Desktop (tested). Built as a standard MCP server, so
+  other MCP clients (e.g. Claude Code) should work but aren't yet verified.
 - **Brokers:** tastytrade (read-only OAuth), and 20+ brokerages via a free
   SnapTrade Personal key. Connect one or both; the gateway analyzes each account
   and a combined whole-portfolio view.
